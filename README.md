@@ -8,9 +8,13 @@ This is a repository with my demos to showcase how to implement several features
 - [Initializing arrays and hashes with blocks](tips/initializing.rb)
 - [Yield, procs, lambdas](tips/yield.rb)
 - [Memoization](tips/memoization.rb)
+- [Caching](tips/caching.html.erb)
+- [Scopes](tips/scopes.rb)
 
 ## Cheatsheets
 
+- [Rbenv and RVM](https://github.com/gustborges/rbenv-rvm-cheatsheet)
+- [Github and Heroku](https://github.com/gustborges/github-heroku-cheatsheet)
 - [Markdown cheatsheet](https://itnext.io/github-markdown-cheatsheet-50642835effa#9063)
 
 ## Repositories

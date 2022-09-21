@@ -1,0 +1,31 @@
+<% # In development, you can turn it on/off with "rails dev:cache" %>
+
+<% # Fragment Cache/Russian Doll %>
+<% # You can use "cache" or "cache_if" ("cache_unless" as well!) for conditions %>
+
+<% @products.each do |prod| %>
+  <% cache prod do %>
+    <%= render product %>
+  <% end %>
+<% end %>
+
+<% # Condition + Russian doll %>
+<% # The advantage of Russian doll caching is that if a single product is updated, all the other inner fragments can be reused when regenerating the outer fragment. %>
+
+<% cache_if current_user.nil?, "public-events", expires_in: 2.hours do %>
+  <% @events.each do |event| %>
+    <% cache_event do %>
+      <%= render event %>
+    <% end %>
+  <% end %>
+<% end %>
+
+<% #In the partial _event %>
+
+<% cache event.artist do %>
+  <%= render event.artist %>
+<% end %>
+
+<% # In the situation above, the artist will not change even if it's updated. So we need to adjust this through the model %>
+<% # In the book model book.rb, we will need to add a touch, like this %>
+<% # belongs_to :artists, touch: true %>
