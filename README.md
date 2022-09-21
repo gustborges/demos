@@ -5,9 +5,9 @@ This is a repository with my demos to showcase how to implement several features
 ## Quick tips and references
 
 - [Destructuring attributes](tips/destructuring.rb)
-- [Initializing arrays and hashes with blocks](tips/instantiating.rb)
-- [Memoization](tips/memoization.rb)
+- [Initializing arrays and hashes with blocks](tips/initializing.rb)
 - [Yield, procs, lambdas](tips/yield.rb)
+- [Memoization](tips/memoization.rb)
 
 ## Cheatsheets
 
@@ -15,5 +15,5 @@ This is a repository with my demos to showcase how to implement several features
 
 ## Repositories
 
-- [Tests with RSpec](https://github.com/gustborges/book-rails-testing-guide)
 - [Data Structures & Algorithms](https://github.com/gustborges/data-structures-and-algorithms)
+- [Tests with RSpec](https://github.com/gustborges/book-rails-testing-guide)
