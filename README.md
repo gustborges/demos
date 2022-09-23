@@ -20,4 +20,5 @@ This is a repository with my demos to showcase how to implement several features
 ## Repositories
 
 - [Data Structures & Algorithms](https://github.com/gustborges/data-structures-and-algorithms)
-- [Tests with RSpec](https://github.com/gustborges/book-rails-testing-guide)
+- [MySpec: create a custom RSpec-like test framework](https://github.com/gustborges/my-spec)
+- [Practice Tests with RSpec](https://github.com/gustborges/book-rails-testing-guide)
